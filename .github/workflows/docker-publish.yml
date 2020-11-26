@@ -15,7 +15,7 @@ on:
 
 env:
   # TODO: Change variable to your image's name.
-  IMAGE_NAME: simple-file-server
+  IMAGE_NAME: anyonecantest/simple-file-server
 
 jobs:
 
@@ -34,7 +34,7 @@ jobs:
         run: docker build . --file Dockerfile --tag $IMAGE_NAME
 
       - name: Log into registry
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u anyonecantest --password-stdin
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login docker.io -u anyonecantest --password-stdin
 
       - name: Push image
         run: |
