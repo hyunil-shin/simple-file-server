@@ -1,10 +1,9 @@
 # simple-file-server
 
-Based on halverneus/static-file-server:latest
-https://github.com/halverneus/static-file-server
+* Based on halverneus/static-file-server:latest
+    * https://github.com/halverneus/static-file-server
 
-
-https://hub.docker.com/r/anyonecantest/simple-file-server/tags?page=1&ordering=last_updated
+* Registry: https://hub.docker.com/r/anyonecantest/simple-file-server/tags?page=1&ordering=last_updated
 
 
 ### How to run file server
